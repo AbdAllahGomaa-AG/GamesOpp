@@ -1,0 +1,122 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
+
+/* main Global css  */
+.ag-main-color {
+    background-color: #272B30;
+}
+
+.ag-blue {
+    background-color: #3A497B;
+}
+
+.navbar-nav .active {
+    color: #09c !important;
+}
+
+.ag-mt-150 {
+    margin-top: 150px;
+}
+
+.ag-fs-12 {
+    font-size: .75rem;
+}
+
+body {
+    background-color: #272B30;
+    font-family: "Recursive", sans-serif;
+}
+
+.nav-item:hover a {
+    color: #09c !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: 2px solid #09c !important;
+}
+
+.text-bg-primary {
+    background-color: #466992 !important;
+}
+
+.card {
+    filter: grayscale(80%);
+    transition: all .5s;
+
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+/*  */
+.loader {
+    color: #ffffff;
+    font-size: 70px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    transform: translateZ(0);
+    animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@keyframes mltShdSpin {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em,
+            0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em,
+            0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em,
+            -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em,
+            -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+            -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+            -0.749em -0.34em 0 -0.477em;
+    }
+
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+            -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+            -0.82em -0.09em 0 -0.477em;
+    }
+
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+            0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+/*  */

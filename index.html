@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game OOP</title>
+    <!-- ================================================================ -->
+    <!-- font awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- ================================================================ -->
+  </head>
+  <body>
+    <main>
+      <section class="container" id="game">
+        <nav class="sticky">
+          <div class="container ag-blue rounded-5 ag-mt-150  containerNavbar ">
+            <nav class="navbar navbar-expand-lg py-1 ">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"
+                  ><div class="inner d-flex">
+                    <img src="image/logo-sm.png" class="w-25" alt="logo" />
+                    <h6 class="mt-3 ms-2 text-white fs-6">GAME REVIEWS</h6>
+                  </div></a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active ag-fs-12 text-white text-white"
+                        aria-current="page"
+                        href="#"
+                        data-category="mmorpg"
+                        >MMORPG</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link ag-fs-12 text-white"
+                        aria-current="page"
+                        href="#"
+                        data-category="shooter"
+                        >SHOOTER</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link ag-fs-12 text-white"
+                        aria-current="page"
+                        href="#"
+                        data-category="sailing"
+                        >SAILING</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link ag-fs-12 text-white"
+                        aria-current="page"
+                        href="#"
+                        data-category="permadeath"
+                        >PERMADEATH</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link ag-fs-12 text-white"
+                        aria-current="page"
+                        href="#"
+                        data-category="superhero"
+                        >SUPERHERO</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link ag-fs-12 text-white"
+                        aria-current="page"
+                        href="#"
+                        data-category="pixel"
+                        >PIXEL</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </nav>
+        <div class="inner d-flex justify-content-center algin mt-5">
+          <span class="loader text-center d-none fw"></span>
+        </div>
+        <section>
+          <div class="row g-5 mb-5 d-none" id="displayData"></div>
+        </section>
+      </section>
+
+      <section class="details d-none" id="details">
+        <div class="container">
+          <header class="hstack justify-content-between">
+            <h1 class="text-center h3 py-4 text-white">Details Game</h1>
+            <button class="btn-close btn-close-white" id="btnClose"></button>
+          </header>
+
+          <div class="row g-4" id="detailsContent"></div>
+          <div class="inner d-flex justify-content-center algin mt-5">
+            <span class="loader text-center d-none" id="loaderDetails"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- loading -->
+
+    <!-- ================================================================ -->
+    <!--bootstrap  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <!-- ================================================================ -->
+  </body>
+</html>
